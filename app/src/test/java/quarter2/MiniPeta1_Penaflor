@@ -1,0 +1,25 @@
+package
+com.example.sampleapplicationfordemo.quarter2;
+
+import org.junit.test
+
+public class Penaflor{
+
+@Test
+public void
+printMyProfile
+
+               //1. INPUT - Personal details
+               String myName = "Penaflor";
+               int myAge = 18;
+               String petName = "Pao Pao";
+               String favFood = "Pork Steak";
+               int myAge = 18;
+
+               //2. OUTPUT
+               System.out.pritln("--- MY DIGITAL PROFILE");
+               System.out.println("Hello,my name is" + myName + "and I am" + myAge +"years old.")
+               System.out.pritln("I have a wonnderful pet named" + petName +".")
+               System.out.println("My favorite food is" + ".");
+}
+}
