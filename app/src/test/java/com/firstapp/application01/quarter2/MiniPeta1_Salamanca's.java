@@ -1,4 +1,4 @@
-package quarter2;
+package com.firstapp.application01.quarter2;
 import org.junit. Test;
 
 public class MiniPeta1_Salamanca {
