@@ -1,0 +1,23 @@
+package library;
+
+import java.util.Scanner;
+
+public class View  {
+
+    public void start(Scanner scanner) {
+        boolean running = true;
+
+        while (running) {
+            System.out.println("\n--- MAIN MENU ---");
+            System.out.println("3: View Catalog");
+            System.out.print("Enter Choice: ");
+
+int choice = Integer.parseInt(scanner.nextLine());
+            System.out.println(choice); // Echo input
+
+ } else if (choice == 2) {
+} else if (choice == 3) {
+                // Step 3: View Catalog
+                System.out.println("\n--- BOOK CATALOG ---");
+                System.out.println("- Noli Me Tangere (Filipino Literature)");
+                System.out.println("- El Filibusterismo (Filipino Literature)");
