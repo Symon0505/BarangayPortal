@@ -1,4 +1,4 @@
-package library;
+package com.firstapp.application01.quarter2;
 
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
@@ -11,21 +11,30 @@ public class MainSystemTest {
         StringBuilder simulatedUserInput = new StringBuilder();
         System.out.println("--- GENERATING LIBRARY TEST DATA ---");
 
-        // Step 1: Search for a book that is not in the category
-        simulatedUserInput.append("1\n"); // Choose Search Book
-        simulatedUserInput.append("To Kill a MockingBird\n"); // Input Book Title (Result: Unavailable)
+        // Step 1: Create Profile
+        simulatedUserInput.append("1\n");
+        simulatedUserInput.append("Zack\n");
+        simulatedUserInput.append("101\n");
 
-// Step 2: Search for a book that is in the category
-        simulatedUserInput.append("1\n"); // Choose Search Book
-        simulatedUserInput.append("Noli Me Tangere\n"); // Input Book Title (Result: Available)
+        // Step 2: Search Book
+        simulatedUserInput.append("2\n");
+        simulatedUserInput.append("Noli Me Tangere\n");
 
-// Step 3: View full book catalog
-        simulatedUserInput.append("2\n"); // Choose View Catalog
+        // Step 3: View Catalog
+        simulatedUserInput.append("3\n");
 
-// Step 4: View inventory list
-        simulatedUserInput.append("3\n"); // Choose View Inventory
+        // Step 4: View Inventory
+        simulatedUserInput.append("4\n");
 
-// Step 5: Exit system
-        simulatedUserInput.append("4\n"); // Choose Exit
+        // Step 5: Exit
+        simulatedUserInput.append("5\n");
+
+        // Convert string builder into stream
+        ByteArrayInputStream inputStream = new ByteArrayInputStream(simulatedUserInput.toString().getBytes());
+        Scanner scanner = new Scanner(inputStream);
+
+        // Execute system flow
+        LibraryMenu menu = new LibraryMenu();
+        menu.start(scanner);
     }
 }
