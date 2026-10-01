@@ -1,4 +1,4 @@
-package library;
+package com.firstapp.application01.quarter2;
 
 import java.util.Scanner;
 
