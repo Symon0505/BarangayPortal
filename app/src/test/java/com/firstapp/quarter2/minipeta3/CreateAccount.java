@@ -1,0 +1,30 @@
+package com.firstapp.quarter2.minipeta3;
+
+import java.util.Scanner;
+
+public class CreateAccount {
+
+    public void start(Scanner scanner) {
+        boolean running = true;
+
+        while (running) {
+            System.out.println("\n--- MAIN MENU ---");
+            System.out.println("1: Create Profile");
+            System.out.print("Enter Choice: ");
+
+            int choice = Integer.parseInt(scanner.nextLine());
+            System.out.println(choice); // Echo input
+
+            if (choice == 1) {
+                // Step 1: Create Profile
+                System.out.print("Enter Name: ");
+                String name = scanner.nextLine();
+                System.out.println(name);
+
+                System.out.print("Enter ID: ");
+                String id = scanner.nextLine();
+                System.out.println(id);
+            }
+        }
+    }
+}

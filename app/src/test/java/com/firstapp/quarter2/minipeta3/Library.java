@@ -1,0 +1,40 @@
+package com.firstapp.quarter2.minipeta3;
+
+import org.junit.Test;
+import java.io.ByteArrayInputStream;
+import java.util.Scanner;
+
+public class Library {
+
+    @Test
+    public void testLibraryFlow() {
+        StringBuilder simulatedUserInput = new StringBuilder();
+        System.out.println("--- GENERATING LIBRARY TEST DATA ---");
+
+        // Step 1: Create Profile
+        simulatedUserInput.append("1\n");
+        simulatedUserInput.append("Zack\n");
+        simulatedUserInput.append("101\n");
+
+        // Step 2: Search Book
+        simulatedUserInput.append("2\n");
+        simulatedUserInput.append("Noli Me Tangere\n");
+
+        // Step 3: View Catalog
+        simulatedUserInput.append("3\n");
+
+        // Step 4: View Inventory
+        simulatedUserInput.append("4\n");
+
+        // Step 5: Exit
+        simulatedUserInput.append("5\n");
+
+        // Convert string builder into stream
+        ByteArrayInputStream inputStream = new ByteArrayInputStream(simulatedUserInput.toString().getBytes());
+        Scanner scanner = new Scanner(inputStream);
+
+        // Execute system flow
+        LibraryMenu menu = new LibraryMenu();
+        menu.start(scanner);
+    }
+}
