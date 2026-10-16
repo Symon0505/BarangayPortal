@@ -1,4 +1,4 @@
-package com.firstapp.quarter2.ui.theme
+package com.firstapp.quarter3.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
