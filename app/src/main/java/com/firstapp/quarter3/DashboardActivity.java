@@ -21,11 +21,10 @@ public class DashboardActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-            public void openDashboardActivity() {
-                Toast.makeText(this, "Button clicked!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this, DashboardActivity.class);
-                startActivity(intent);
-            }
         });
+    }
+    public void openDashboardActivity() {
+        Intent intent = new Intent(this, DashboardActivity.class);
+        startActivity(intent);
     }
 }
