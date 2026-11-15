@@ -11,40 +11,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Application01">
-
         <activity
-            android:name="com.firstapp.quarter3.MainActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Application01"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
-            android:name="com.firstapp.quarter3.Feature1_Santos_Cris"
-            android:theme="@style/Theme.Application01"
+            android:name=".Feature1_Santos_Cris"
             android:exported="true"
+            android:theme="@style/Theme.Application01"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="com.firstapp.quarter3.DashboardActivity"
+            android:name=".DashboardActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
-            android:name="com.firstapp.quarter3.Main_Feature_Sagmit"
+            android:name=".Main_Feature_Sagmit"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
-            android:name="com.firstapp.quarter3.Penaflor_SubFeature"
+            android:name=".Penaflor_SubFeature"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
+        <activity
+            android:name=".Fontabla_Signup"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
