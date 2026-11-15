@@ -2,7 +2,7 @@ package com.firstapp.quarter3;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,9 +22,15 @@ public class DashboardActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        LinearLayout btnHiUser = findViewById(R.id.btnHiUser);
+        if (btnHiUser != null) {
+            btnHiUser.setOnClickListener(v -> openMainFeatureSagmit());
+        }
     }
-    public void openDashboardActivity() {
-        Intent intent = new Intent(this, DashboardActivity.class);
+
+    public void openMainFeatureSagmit() {
+        Intent intent = new Intent(this, Main_Feature_Sagmit.class);
         startActivity(intent);
     }
 }

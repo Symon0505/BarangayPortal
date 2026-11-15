@@ -71,6 +71,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
+            android:id="@+id/btnHiUser"
             android:layout_width="match_parent"
             android:layout_height="335dp"
             android:orientation="vertical"
