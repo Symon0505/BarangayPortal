@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Feature1_Santos_Cris extends AppCompatActivity {
-    private Button button;
+    private Button loginbutton;
     private TextView signuptest;
 
     @Override
@@ -17,8 +17,8 @@ public class Feature1_Santos_Cris extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feature1_santos_cris);
 
-        button = findViewById(R.id.loginbutton);
-        button.setOnClickListener(new View.OnClickListener() {
+        loginbutton = findViewById(R.id.loginbutton);
+        loginbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openDashboardActivity();
@@ -29,20 +29,18 @@ public class Feature1_Santos_Cris extends AppCompatActivity {
         signuptest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openSignupActivity();
+                openFontablaSignup();
             }
         });
     }
 
     public void openDashboardActivity() {
-        Intent intent = new Intent(this,Fontabla_Signup.class);
+        Intent intent = new Intent(this, DashboardActivity.class);
         startActivity(intent);
     }
 
-    public void openSignupActivity() {
+    public void openFontablaSignup() {
         Intent intent = new Intent(this, Fontabla_Signup.class);
         startActivity(intent);
     }
 }
-
-

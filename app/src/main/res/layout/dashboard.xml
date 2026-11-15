@@ -17,7 +17,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="267dp"
+            android:layout_height="269dp"
             android:background="#FF9D16"
             android:gravity="center">
 
@@ -31,10 +31,9 @@
                 android:textColor="#FFFFFF"
                 android:textSize="60sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp" />
+                tools:layout_editor_absoluteY="16dp" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -42,21 +41,22 @@
                 android:layout_height="wrap_content"
                 android:text="🏫"
                 android:textSize="96sp"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                tools:layout_editor_absoluteX="145dp"
+                tools:layout_editor_absoluteY="97dp" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="68dp"
                 android:text="LEARN • GROW • ACHIEVE"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/textView3"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -65,10 +65,8 @@
                 android:text="Together to a Brighter Future!"
                 android:textColor="#F44336"
                 android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@+id/textView4"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="4dp" />
+                tools:layout_editor_absoluteX="114dp"
+                tools:layout_editor_absoluteY="243dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -79,12 +77,8 @@
             android:padding="20dp">
 
             <LinearLayout
-                android:id="@+id/btnHiUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:focusable="true"
-                android:background="?attr/selectableItemBackground"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:paddingTop="5dp"
